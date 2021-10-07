@@ -1,0 +1,16 @@
+<image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="4 / 4"
+    [imageURL]="parentInfo.image"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()"
+    style="max-width: 500px;"
+></image-cropper>
+<!-- <hr>
+<img [src]="croppedImage" style="max-width: 500px;" /> -->
+<hr>
+<input type="file" (change)="fileChangeEvent($event)" />
