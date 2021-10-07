@@ -3,6 +3,7 @@
     [maintainAspectRatio]="true"
     [aspectRatio]="4 / 4"
     [imageURL]="parentInfo.image"
+    [roundCropper] = true
     format="png"
     (imageCropped)="imageCropped($event)"
     (imageLoaded)="imageLoaded()"
